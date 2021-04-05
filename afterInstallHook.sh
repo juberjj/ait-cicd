@@ -28,9 +28,9 @@ node_script() {
 ####################################
 # Sync app directory
 
-aws s3 cp s3://node-artifacts/app.zip /tmp/app/app.zip
+#aws s3 cp s3://node-artifacts/app.zip /tmp/app/app.zip
 
-unzip -o /tmp/app/app.zip -d /tmp/app/
+#unzip -o /tmp/app/app.zip -d /tmp/app/
 rsync -av --delete /tmp/app/ /usr/share/nodeapp/
 
 common
@@ -39,4 +39,4 @@ node_script
 
 # Remove temporary deployment.
 rm -r /tmp/app
-rm /usr/share/nodeapp/app.zip
+#rm /usr/share/nodeapp/app.zip
