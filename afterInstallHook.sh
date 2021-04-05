@@ -7,16 +7,20 @@
 ### Common
 #######################
 common() {
+  echo "------ Common Scripts ------"
 	# Copy .env file
 	aws s3 cp s3://ait-deployment-dev/node-app/.env /usr/share/nodeapp/.env
   
 	# Run NPM.
-	sudo npm i --prefix /usr/share/nodeapp
+	npm i --prefix /usr/share/nodeapp
 }
 
 ### Node Run Script
 #######################
 node_script() {
+
+  echo "------ Node Scripts ------"
+
 	# Run NPM
  cd /usr/share/nodeapp
  npm run start
