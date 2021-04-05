@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /tmp/nodeapp
+hooks:
+   AfterInstall:
+     - location: afterInstallHook.sh
+       timeout: 400
+       runas: root
