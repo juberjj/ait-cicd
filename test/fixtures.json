@@ -44,6 +44,10 @@
     {
       "amount": 430,
       "method": "paypal"
+    },
+    {
+      "amount": 290,
+      "method": "paypal"
     }
   ],
   "newCandidate": {
