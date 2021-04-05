@@ -38,5 +38,5 @@ common
 node_script
 
 # Remove temporary deployment.
-rm -r /tmp/app
+#rm -r /tmp/app
 #rm /usr/share/nodeapp/app.zip
