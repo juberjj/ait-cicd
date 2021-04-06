@@ -11,8 +11,8 @@
 	# Run NPM
  cd /usr/share/nodeapp
 	# Run NPM.
-  sudo npm i 
-  sudo npm run start
+   npm i 
+  npm run start
 
 
 # Remove temporary deployment.
