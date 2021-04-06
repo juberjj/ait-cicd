@@ -3,11 +3,11 @@
 
 #whoami
 
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
   
-source /root/.bashrc
+#source /root/.bashrc
 
   rsync -av --delete /tmp/nodeapp/ /usr/share/nodeapp/
 	# Copy .env file
@@ -19,7 +19,7 @@ source /root/.bashrc
  cd /usr/share/nodeapp/
 	# Run NPM.
  npm i 
- npm run start&
+ npm run test
 
 
 # Remove temporary deployment.

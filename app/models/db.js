@@ -13,8 +13,8 @@ async function seed() {
   const Donation = require('./donation');
   const Candidate = require('./candidate.js');
   const User = require('./user');
-  const dbData = await seeder.seed(data, { dropDatabase: false, dropCollections: true });
-  console.log(dbData);
+  //const dbData = await seeder.seed(data, { dropDatabase: false, dropCollections: true });
+  //console.log(dbData);
 }
 
 db.on('error', function(err) {
