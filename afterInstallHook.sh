@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -e
+set -e
 source ~/.bashrc
   rsync -av --delete /tmp/nodeapp/ /usr/share/nodeapp/
 	# Copy .env file
@@ -11,7 +11,7 @@ source ~/.bashrc
  cd /usr/share/nodeapp/
 	# Run NPM.
  npm i 
-  #npm run start
+ npm run start
 
 
 # Remove temporary deployment.
