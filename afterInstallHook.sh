@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 ####################################
 # SET MAIN FUNCTIONS
 ####################################
@@ -11,8 +11,6 @@ common() {
 	# Copy .env file
 	aws s3 cp s3://ait-deployment-dev/node-app/.env /usr/share/nodeapp/.env
   
-	# Run NPM.
-	sudo npm i --prefix /usr/share/nodeapp
 }
 
 ### Node Run Script
@@ -23,6 +21,8 @@ node_script() {
 
 	# Run NPM
  cd /usr/share/nodeapp
+	# Run NPM.
+	sudo npm i --prefix /usr/share/nodeapp
  sudo npm run start
 }
 
