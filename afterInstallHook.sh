@@ -22,8 +22,8 @@ node_script() {
 	# Run NPM
  cd /usr/share/nodeapp
 	# Run NPM.
-	sudo npm i --prefix /usr/share/nodeapp
- sudo npm run start
+  npm i --prefix /usr/share/nodeapp
+  npm run start
 }
 
 
