@@ -12,7 +12,7 @@ common() {
 	aws s3 cp s3://ait-deployment-dev/node-app/.env /usr/share/nodeapp/.env
   
 	# Run NPM.
-	npm i --prefix /usr/share/nodeapp
+	sudo npm i --prefix /usr/share/nodeapp
 }
 
 ### Node Run Script
@@ -23,7 +23,7 @@ node_script() {
 
 	# Run NPM
  cd /usr/share/nodeapp
- npm run start
+ sudo npm run start
 }
 
 
