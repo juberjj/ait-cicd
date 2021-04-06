@@ -9,7 +9,7 @@
 	# Run NPM
  cd /usr/share/nodeapp/
 	# Run NPM.
-sudo npm i 
+ npm i 
   #npm run start
 
 
