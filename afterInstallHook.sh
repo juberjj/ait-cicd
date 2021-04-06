@@ -1,21 +1,10 @@
 #!/bin/bash
 #set -e
-####################################
-# SET MAIN FUNCTIONS
-####################################
+  source /root/.bash_profile
 
-### Common
-#######################
-common() {
-  echo "------ Common Scripts ------"
+  rsync -av --delete /tmp/nodeapp/ /usr/share/nodeapp/
 	# Copy .env file
 	aws s3 cp s3://ait-deployment-dev/node-app/.env /usr/share/nodeapp/.env
-  
-}
-
-### Node Run Script
-#######################
-node_script() {
 
   echo "------ Node Scripts ------"
 
@@ -24,22 +13,7 @@ node_script() {
 	# Run NPM.
   sudo npm i 
   sudo npm run start
-}
 
-
-####################################
-# MAIN SCRIPT
-####################################
-# Sync app directory
-
-#aws s3 cp s3://node-artifacts/app.zip /tmp/app/app.zip
-
-#unzip -o /tmp/app/app.zip -d /tmp/app/
-rsync -av --delete /tmp/nodeapp/ /usr/share/nodeapp/
-
-common
-
-node_script
 
 # Remove temporary deployment.
 rm -r /tmp/nodeapp
