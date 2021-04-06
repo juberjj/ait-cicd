@@ -22,7 +22,7 @@ node_script() {
 	# Run NPM
  cd /usr/share/nodeapp
 	# Run NPM.
-  npm i --prefix /usr/share/nodeapp
+  npm i 
   npm run start
 }
 
