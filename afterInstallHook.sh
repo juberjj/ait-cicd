@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+#set -e
 source ~/.bashrc
   rsync -av --delete /tmp/nodeapp/ /usr/share/nodeapp/
 	# Copy .env file
