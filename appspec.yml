@@ -8,4 +8,4 @@ hooks:
    AfterInstall:
      - location: afterInstallHook.sh
        timeout: 400
-       runas: root
+      #  runas: root
