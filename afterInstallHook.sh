@@ -14,5 +14,5 @@ sudo npm i
 
 
 # Remove temporary deployment.
-rm -r /tmp/nodeapp
+#rm -r /tmp/nodeapp
 #rm /usr/share/nodeapp/app.zip
