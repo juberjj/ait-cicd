@@ -19,7 +19,7 @@ export NVM_DIR="$HOME/.nvm"
  cd /usr/share/nodeapp/
 	# Run NPM.
  npm i 
- npm run start
+ sudo npm run start
 
 
 # Remove temporary deployment.
