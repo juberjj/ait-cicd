@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx pm2 start index.js",
+    "start": "npx pm2 restart index.js",
     "test": "npx mocha --ui tdd --reporter mochawesome"
   },
   "author": "",
